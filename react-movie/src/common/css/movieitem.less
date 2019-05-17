@@ -1,0 +1,37 @@
+.movie-item{
+    width: 100%;
+    min-height: 200px;
+    background: #fff;
+    box-shadow: 0 0 5px 0px #999;
+    text-align: center;
+    display: flex;
+    margin-top: 5px;
+    padding-top: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    &:hover{
+        cursor: pointer;
+        transform: rotate(1deg) scale(1.05);
+    }
+    p{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        white-space:nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:last-child{
+            color: #FEA527;
+            font-size: 20px;
+        }
+        span{
+            font-weight: 700
+        }
+    }
+    img{
+        height: 128px;
+    }
+}
